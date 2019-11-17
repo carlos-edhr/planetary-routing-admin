@@ -1,0 +1,29 @@
+<div class="table-responsive">
+	<table id="userList" class="table table-bordered table-hover table-striped">
+		<thead class="thead-light">
+		<tr>
+			<th scope="col">ID</th>
+			<th scope="col">First Name</th>
+			<th scope="col">Last Name</th>
+			<th scope="col">Birth Date</th>
+			<th scope="col">Reports to</th>
+			<th scope="col">Ext</th>
+			<th></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="employee: ${employeeList}">
+			<td th:text="${employee.employee_id}"></td>
+			<td th:text="${employee.name}"></td>
+			<td th:text="${employee.last_name}"></td>
+			<td th:text="${employee.birth_date}"></td>
+			<td th:text="${employee.reports_to}"></td>
+			<td th:text="${employee.ext}"></td>
+			<td>
+					
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	
+</div>
